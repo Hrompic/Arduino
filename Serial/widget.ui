@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>461</width>
+    <height>156</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>461</width>
+    <height>156</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>461</width>
+    <height>156</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Widget</string>
+  </property>
+  <property name="toolTip">
+   <string notr="true"/>
+  </property>
+  <property name="statusTip">
+   <string notr="true"/>
+  </property>
+  <property name="whatsThis">
+   <string notr="true"/>
+  </property>
+  <property name="accessibleName">
+   <string notr="true"/>
+  </property>
+  <property name="accessibleDescription">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>0</y>
+     <width>121</width>
+     <height>78</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>31</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>0.00V</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>241</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>241</width>
+     <height>151</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>241</width>
+     <height>151</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="segmentStyle">
+    <enum>QLCDNumber::Flat</enum>
+   </property>
+   <property name="value" stdset="0">
+    <double>0.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QSlider" name="verticalSlider">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>10</y>
+     <width>20</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>255</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="tickPosition">
+    <enum>QSlider::NoTicks</enum>
+   </property>
+   <property name="tickInterval">
+    <number>7</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>80</y>
+     <width>64</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="suffix">
+    <string>V</string>
+   </property>
+   <property name="decimals">
+    <number>2</number>
+   </property>
+   <property name="maximum">
+    <double>5.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.020000000000000</double>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
